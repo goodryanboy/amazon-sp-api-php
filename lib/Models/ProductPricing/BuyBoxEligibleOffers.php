@@ -248,4 +248,9 @@ class BuyBoxEligibleOffers implements ModelInterface, ArrayAccess
 
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
+
+    public function getSubClass()
+    {
+        return BuyBoxPriceType::class;
+    }
 }
